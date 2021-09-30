@@ -97,6 +97,11 @@ body {
     display: block;
 }
 
+.footer-link {
+    text-decoration: none;
+    color: green;
+}
+
 @media screen and (max-width:400px) {
     body {
         margin-right: 25px;
