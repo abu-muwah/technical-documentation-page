@@ -1,0 +1,132 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #FAF9F7; 
+    color: #27241D;
+    margin: 0;
+    width: 100%;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row-reverse;
+    border-left: rgb(77, 74, 74);
+}
+
+#main-doc {
+    display: flex;
+    align-items: flex-start;
+    margin: 5px 15px;
+    width: 67%;
+    border-left: solid rgb(204, 203, 203) 5px;
+    padding: 30px;
+    
+}
+
+#main-doc li {
+    list-style-type: circle;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 200;
+    margin: 35px 0 20px 0px;
+}
+
+.code-background {
+    background-color: #2c2c32;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3px;
+}
+
+.main-title {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+
+#navbar {
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+    left: 0;
+    width: 24%;
+    margin: 10px;
+}
+
+.nav-ul {
+    overflow-y: auto;
+    padding-left: 0;
+    line-height: 30px;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-li {
+    list-style-type: none;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.nav-li:not(:last-child) {
+    border-bottom: solid 1px rgb(204, 196, 196);
+}
+
+.nav-li:hover {
+    background-color: rgb(211, 206, 206);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #27241D;
+    padding: 10px;
+    display: block;
+}
+
+@media screen and (max-width:400px) {
+    body {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .parent {
+        margin: 5px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #main-doc {
+        padding-left: 20px;  
+        width: 10%;
+    }    
+}
+
+@media screen and (max-width:400px) {
+    #navbar{
+        width: 40%;
+    }
+    
+    #navbar h1 {
+        font-size: 20px;
+    }
+    
+    #navbar a {
+        font-size: 15px;
+    }
+}
